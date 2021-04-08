@@ -86,7 +86,8 @@ function spawnFood(){
 if (frameCount % 60 === 0){
    var Food = createSprite(600,165,10,40);
    Food.velocityX = -(6);
-
+Food.addImage(bananaImage);
+  Food.scale=0.1;
 }
 }
 
