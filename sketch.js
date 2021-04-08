@@ -92,7 +92,12 @@ Food.addImage(bananaImage);
 }
 
 function spawnObstacles(){
-
+if (frameCount % 60 === 0){
+  var obstacle=createSprite(400,350,700,10);
+  obstacle.velocityX = -(6);
+  obstacle.addImage(obstacleImage);
+  obstacle.scale=0.1;
+}
 
  
 }
